@@ -1,14 +1,9 @@
 /*
-   Name : Netfly Lib JS
-   Powered by : Netfly llc
+   Name : Netflys Lib JS
+   Powered by : Netflys llc
    Licensed under : Apache 2.0
    Created by : mohammad sefatullah.
    Last updated : 31, Dec 2020
-
- # In this version, [1.0] features :
-  * XMLHttpRequest
-  * Window customize
-  * Font and selection styles (Typography 1)
 
  # In this version, [1.0] included :
   * Ajax : Arguments- url, method, credential, requestHeader, section, success with onload, error with onload. Create a XMLHttpRequest request with any tools.
