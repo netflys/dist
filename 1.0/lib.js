@@ -271,7 +271,6 @@
     module.exports = Ajax;
     module.exports = Windows;
     module.exports = Font;
-    module.exports = Select;
   } else if (typeof define === 'function' && define.amd) {
     define([], function () {
       return Ajax, Windows, Fonts, Select;
@@ -285,9 +284,6 @@
     }
     if (!window.Fonts) {
       window.Fonts = Fonts;
-    }
-    if (!window.Select) {
-      window.Select = Select;
     }
   }
 } (typeof window !== 'undefined' ? window: this));
