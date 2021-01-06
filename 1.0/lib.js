@@ -9,7 +9,6 @@
   * Ajax : Arguments- url, method, credential, requestHeader, section, success with onload, error with onload. Create a XMLHttpRequest request with any tools.
   * Window : Get window type like- mobile, tablet, ipad, laptop, dekstop and set anythings with window.
   * Fonts : Arguments- element, family, size, weight, style, width, height, space, breaks, color. Create a typography.
-  * Select : Arguments- element, bgcolor, color. Create a selection styles.
 */
 
 (function(window) {
@@ -265,25 +264,6 @@
       }
     } else {
       return console.error("Failed to create fonts. Element arguments are required, but not present.");
-    }
-  }
-
-  function Select( {
-    element = "", bgcolor = "rgb(0,123,255,0.3)", color = "#fff"
-  }) {
-    if (bgcolor && color) {
-      let style = document.createElement("style");
-      let selection;
-      style.type = "text/css";
-      style.innerHTML = element+" ::selection {background: "+bgcolor+";color:"+color+";}";
-
-      let onl = function (argument) {
-        document.head.appendChild(style);
-      };
-      if (document.body) onl();
-      else window.onload = onl;
-    } else {
-      return console.error("Failed to create selection styles. Bgcolor and color arguments are required, but all are not present.");
     }
   }
 
